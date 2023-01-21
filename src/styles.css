@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --clr-primary: hsl(0, 0%, 100%);
+  --clr-secondary: hsl(0, 0%, 52%);
+  --clr-background: hsl(0, 0%, 98%);
+  --clr-text: hsl(200, 15%, 8%);
+}
+
+.dark-mode {
+  --clr-primary: hsl(209, 23%, 22%);
+  --clr-secondary: hsl(209, 23%, 22%);
+  --clr-background: hsl(207, 26%, 17%);
+  --clr-text: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  background-color: var(--clr-background);
+  color: var(--clr-text);
+}
+
+.icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  mask-size: cover;
+  background: var(--clr-text);
+}
