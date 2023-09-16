@@ -113,7 +113,7 @@ import { CountryService } from '../country.service';
       }
 
       .icon--back {
-        mask: url('../../../assets/icons/arrow-left.svg');
+        mask: url('/assets/icons/arrow-left.svg');
         mask-repeat: no-repeat;
         padding-inline: 0.3rem;
         width: 1rem;

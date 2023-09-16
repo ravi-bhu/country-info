@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { debounceTime, filter, map, Observable, Subscription, tap } from 'rxjs';
+import { filter, map, Observable, Subscription, tap } from 'rxjs';
 import { Country, CountrySummary } from './country';
 import {
   toCountriesSummariesOrderedByName,
@@ -28,7 +28,7 @@ export class CountryService {
   searchCountriesByName(name: string): Observable<CountrySummary[]> {
     return this.httpClient
       .get<CountrySummary[]>(`${API_URL}/name/${name}`)
-      .pipe(debounceTime(500), map(toCountriesSummariesOrderedByName));
+      .pipe(map(toCountriesSummariesOrderedByName));
   }
 
   getCountriesByRegion(region: string): Observable<CountrySummary[]> {

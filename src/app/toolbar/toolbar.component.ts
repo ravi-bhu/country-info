@@ -49,12 +49,12 @@ import { ThemeService } from '../shared/theme/theme.service';
       }
 
       .icon-dark-mode {
-        mask: url('../../assets/icons/dark-mode.svg');
+        mask: url('/assets/icons/dark-mode.svg');
         transition: all 0.2s;
       }
 
       .icon-light-mode {
-        mask: url('../../assets/icons/light-mode.svg');
+        mask: url('/assets/icons/light-mode.svg');
         transition: all 0.2s;
       }
     `,

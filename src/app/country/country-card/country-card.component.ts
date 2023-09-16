@@ -23,7 +23,7 @@ import { CountrySummary } from '../country';
     `
       app-card {
         height: 25rem;
-        width: 15rem;
+        width: 17rem;
         cursor: pointer;
       }
 

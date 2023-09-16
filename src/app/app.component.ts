@@ -5,19 +5,9 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <app-toolbar></app-toolbar>
-    <router-outlet></router-outlet>
-  `,
-  styles: [
-    `
-      :host {
-        height: 100vh;
-        background-color: var(--clr-primary);
-      }
-    `,
-  ],
   standalone: true,
-  imports: [CommonModule, ToolbarComponent, RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+  imports: [CommonModule, RouterOutlet, ToolbarComponent],
 })
 export class AppComponent {}

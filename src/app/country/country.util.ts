@@ -1,7 +1,7 @@
 import { Country, CountrySummary } from './country';
 
 export const toCountriesSummariesOrderedByName = (
-  response: any[]
+  response: CountrySummary[]
 ): CountrySummary[] => {
   return response.map(toCountrySummary).sort(byCountryName);
 };

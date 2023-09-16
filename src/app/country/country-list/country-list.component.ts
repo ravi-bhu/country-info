@@ -18,7 +18,7 @@ import { CountryCardComponent } from '../country-card/country-card.component';
       :host {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-        grid-gap: 2rem 3rem;
+        grid-gap: 2rem 1.5rem;
       }
     `,
   ],
